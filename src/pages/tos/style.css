@@ -1,0 +1,11 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.heading {
+    @apply text-2xl font-semibold text-white
+}
+
+.desc {
+    @apply font-medium mt-2
+}
