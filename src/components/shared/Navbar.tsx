@@ -8,30 +8,31 @@ import {
     DrawerFooter,
     DrawerTrigger,
 } from "@/components/ui/drawer"
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Links = [
     {
-        link: "Contact",
+        link: "Home",
         path: "/"
     },
     {
-        link: "Reviews",
-        path: "#reviws"
+        link: "Benifits",
+        path: "#benifits"
     },
     {
         link: "Pricing",
         path: "#pricing"
     },
     {
-        link: "Help",
-        path: "/help"
+        link: "Contact",
+        path: "/contact"
     },
 ]
 
 export default function Navbar() {
     return (
         <header>
-            <nav className="fixed px-4 overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b  border-x backdrop-blur">
+            <nav className="fixed px-4 overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b  backdrop-blur">
                 <div className="m-auto max-w-7xl 2xl:px-0">
                     <div className="flex flex-wrap items-center justify-between py-2 sm:py-4">
                         <div className="w-full items-center flex justify-between md:w-auto">
@@ -48,9 +49,16 @@ export default function Navbar() {
                                     {
                                         Links.map((link, index) => {
                                             return <li key={index}>
-                                                <Link to={link.path} className="block md:px-4 transition hover:text-primary-600 dark:hover:text-purple-500">
-                                                    <span>{link.link}</span>
-                                                </Link>
+                                                {link.path.includes("#") ?
+                                                    <AnchorLink offset={100} href={link.path}
+                                                        className="block md:px-4 transition hover:text-primary-600 dark:hover:text-purple-500"
+                                                    >
+                                                        {link.link}
+                                                    </AnchorLink> :
+                                                    <Link to={link.path} className="block md:px-4 transition hover:text-primary-600 dark:hover:text-purple-500">
+                                                        {link.link}
+                                                    </Link>
+                                                }
                                             </li>
                                         })
                                     }

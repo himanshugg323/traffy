@@ -48,7 +48,7 @@ const BenefitsData = [
 
 export default function Benifits() {
     return (
-        <section className="px-4 overflow-hidden">
+        <section className="px-4 overflow-hidden" id="benifits">
 
             <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-semibold capitalize">Benefits of our <span className="text-purple-500"> Real Visitors </span> </h2>

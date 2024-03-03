@@ -62,7 +62,7 @@ const data = [
 
 export default function Pricing() {
     return (
-        <section className='px-4 py-12 pb-24 max-w-6xl mx-auto'>
+        <section id="pricing" className='px-4 py-12 pb-24 max-w-6xl mx-auto'>
 
             <div className='text-center'>
                 <h3 className='text-2xl font-semibold sm:text-3xl mb-12 text-center'>
