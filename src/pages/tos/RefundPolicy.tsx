@@ -15,8 +15,8 @@ export default function RefundPolicy() {
         <Layout>
             <div className="text-center pt-12">
                 <h3 className="text-2xl font-semibold sm:text-4xl">Refund Policy</h3>
-                <p className="mt-1 pl-1">For peace of mind we offer a free trial and a 30 day money back guarantee.</p>
-                <AnchorLink href="/" className={cn(buttonVariants({ variant: "default", className: "capitalize mt-4" }))}>Request a refund below
+                <p className="mt-1 pl-1">Start now with our listed plans and if you do not get satisfied then ask for a refund.</p>
+                <AnchorLink href="" className={cn(buttonVariants({ variant: "default", className: "capitalize mt-4" }))}>Request a refund below
                 </AnchorLink>
             </div>
             <div className="mt-12 text-gray-400">

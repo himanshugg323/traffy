@@ -7,7 +7,8 @@ import { FaLocationDot, FaSquareXTwitter } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { CheckCircleIcon } from 'lucide-react';
 
 const schema = z.object({
     firstName: z.string().min(1, { message: 'First Name is required' }),
@@ -21,23 +22,41 @@ type FormData = z.infer<typeof schema>;
 
 export default function Contact() {
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
-
+    const [submitted, setSubmitted] = useState(false); // Added state for tracking submission
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
         resolver: zodResolver(schema),
     });
 
-    const onSubmit = (data: FormData) => {
+
+    const onSubmit = async (data: FormData) => {
         console.log(data);
-        reset()
+        async () => {
+            await fetch("https://formsubmit.co/himanshuggg323@gmail.com", { method: "post" }).then((e) => {
+                if (e.status === 200) {
+                    reset();
+                    setSubmitted(true);
+                }
+            }).catch((e) => console.log("Error", e))
+        }
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     return (
         <Layout>
             <div className="max-w-7xl mx-auto my-4 px-4 lg:px-20">
-                <form onSubmit={handleSubmit(onSubmit)} className="w-full p-8 my-4 lg:w-9/12 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                {submitted ? <div className='bg-purple-950 p-4 flex items-center justify-center flex-col rounded-xl mb-12 max-w-md mx-auto mt-4' >
+                    <CheckCircleIcon className='w-12 h-12' />
+                    <p className='text-lg capitalize font-medium mt-2'>Form submitted successfully</p>
+                    <p className='capitalize'>Our team will contact you within 24hrs</p>
+                </div> : <form
+                    action="https://formsubmit.co/himanshuggg323@gmail.com"
+                    method="POST"
+                    // onSubmit={handleSubmit(onSubmit)}
+                    className="w-full p-8 my-4 lg:w-9/12 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                     <div className="flex">
                         <h1 className="font-bold uppercase text-5xl">Send us a <br /> message</h1>
                     </div>
@@ -64,7 +83,7 @@ export default function Contact() {
                         {errors.message && <span className="text-red-500">{errors.message.message}</span>}
                     </div>
                     <Button className="text-md">Send Message</Button>
-                </form>
+                </form>}
                 <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-purple-950 rounded-2xl">
                     <div className="flex flex-col text-white">
                         <h1 className="font-bold uppercase text-4xl my-4">Drop in our office</h1>

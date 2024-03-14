@@ -16,7 +16,7 @@ export default function CookiesPoliciy() {
             <div className="text-center pt-12">
                 <h3 className="text-2xl font-semibold sm:text-4xl">Cookies  Policy</h3>
                 <p className="mt-1 pl-1">We save tiny bits of information (cookies) on your computer to improve our service.</p>
-                <Link to="/" className={cn(buttonVariants({ variant: "default", className: "capitalize mt-4" }))}>Start your free trial
+                <Link to="/" className={cn(buttonVariants({ variant: "default", className: "capitalize mt-4" }))}>Start Now
                 </Link>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 md:gap-10 py-20" >

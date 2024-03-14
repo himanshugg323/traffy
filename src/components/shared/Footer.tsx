@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto space-y-16 px-3 sm:px-6 py-16 text-gray-600 2xl:px-0">
                 <div className="flex flex-wrap items-center justify-between gap-4 border-b pb-8 ">
                     <Link to="/" aria-label="tailus logo">
-                        Logo
+                        <img src="/logo.png" className="w-[120px]" />
                     </Link>
                     <div className="flex gap-3">
                         <Link to="" target="blank" aria-label="github" className="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
                 <div className="grid sm:grid-cols-2 gap-6 md:grid-cols-3">
                     <div className="text-gray-300 flex flex-col gap-1">
-                        <p>Logo</p>
+                        <img src="/logo.png" alt="traffiy" className="w-[120px]" />
                         <p>Ascend Group 16090525</p>
                         <p>Keemia tn 4, Tallinn 10616 Estonia</p>
                         <div className="flex items-center gap-2 pt-2">

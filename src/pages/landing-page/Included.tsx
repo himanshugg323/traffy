@@ -39,7 +39,7 @@ export default function Included() {
                                 <p className='font-semibold text-lg capitalize'>{data.title}</p>
                                 <p className='text-gray-300 mt-1 max-w-sm'>{data.description}</p>
                             </div>
-                            <img src={data.src} alt="brand name" className='hidden sm:block max-h-[180px] max-w-[180px] ml-auto mt-auto' />
+                            <img src={data.src} alt="traffy" className='hidden sm:block max-h-[180px] max-w-[180px] ml-auto mt-auto' />
                         </div>
                     ))
                 }
@@ -47,8 +47,8 @@ export default function Included() {
 
             <div className=" text-center flex py-12 sm:py-24 items-center justify-center flex-col">
                 <p className="text-2xl font-semibold sm:text-3xl">Drive huge amounts of visitors</p>
-                <p className="mb-8 mt-1">Sign up for a free trial and get 2500 visitors for free, cancel at anytime!</p>
-                <Link to="/" className={cn(buttonVariants({ variant: "default", className: "" }))}>Get 2500 Visitors on your free trial</Link>
+                <p className="mb-8 mt-1">Start your first campaign to reach new audience!</p>
+                <Link to="/" className={cn(buttonVariants({ variant: "default", className: "text-[17px] capitalize" }))}>Started your first campaign now!</Link>
             </div>
 
         </section>

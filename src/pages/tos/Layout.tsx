@@ -13,8 +13,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 {children}
                 <div className=" text-center flex py-12 sm:py-24 items-center justify-center flex-col">
                     <p className="text-2xl font-semibold sm:text-3xl">Drive huge amounts of visitors</p>
-                    <p className="mb-8 mt-1">Sign up for a free trial and get 2500 visitors for free, cancel at anytime!</p>
-                    <Link to="/" className={cn(buttonVariants({ variant: "default", className: "text-md" }))}>Get 2500 Visitors on your free trial</Link>
+                    <p className="mb-8 mt-1">Get started with your first campaign to get seen by massiv audience</p>
+                    <Link to="/" className={cn(buttonVariants({ variant: "default", className: "text-md" }))}>Start Now!</Link>
                 </div>
             </section>
             <Footer />

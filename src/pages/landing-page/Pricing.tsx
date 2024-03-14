@@ -62,12 +62,11 @@ const data = [
 
 export default function Pricing() {
     return (
-        <section id="pricing" className='px-4 py-12 pb-24 max-w-6xl mx-auto'>
+        <section id="pricing" className='px-4 pb-24 max-w-6xl mx-auto'>
 
             <div className='text-center'>
-                <h3 className='text-2xl font-semibold sm:text-3xl mb-12 text-center'>
-                    Start Your 5 Day
-                    <span className='text-purple-500'> Free Trial</span>
+                <h3 className='text-2xl capitalize font-semibold sm:text-3xl mb-4 text-center'>
+                    Start <span className='text-primary'> First Campaign </span>  with us
                 </h3>
                 <p className='mt-3'>Start with a free 5 day trial. Cancel at anytime!</p>
                 <p>Monthly subscription on all our plans.</p>
@@ -85,7 +84,7 @@ export default function Pricing() {
                                 <p className='text-gray-300 mt-1 max-w-sm text-lg font-medium'>{data.monthlyVisitors}K <span className='text-gray-500'> Visitors</span> </p>
                                 <p className='text-gray-300 mt-1 max-w-sm text-lg font-medium'>${data.price}/ <span className='text-gray-500'>mo</span></p>
                             </div>
-                            <Link to="/" className={cn(buttonVariants({ variant: "default", className: "w-full sm:w-auto" }))}>Start Trial</Link>
+                            <Link to="/" className={cn(buttonVariants({ variant: "default", className: "w-full sm:w-auto" }))}>Start Now!</Link>
                         </div>
                     ))
                 }

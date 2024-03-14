@@ -34,10 +34,10 @@ export default function Navbar() {
         <header>
             <nav className="fixed px-4 overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b  backdrop-blur">
                 <div className="m-auto max-w-7xl 2xl:px-0">
-                    <div className="flex flex-wrap items-center justify-between py-2 sm:py-4">
+                    <div className="flex flex-wrap items-center justify-between">
                         <div className="w-full items-center flex justify-between md:w-auto">
                             <Link to="/" aria-label="tailus logo">
-                                Brand Logo
+                                <img src="/logo.png" className="w-[100px] h-[60px] object-contain" />
                             </Link>
                             <div className="flex md:hidden">
                                 <Navbar2 />

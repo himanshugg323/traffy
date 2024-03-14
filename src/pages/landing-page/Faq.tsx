@@ -36,7 +36,7 @@ export default function Faq() {
                 </AccordionItem>
 
                 <AccordionItem value="value-3">
-                    <AccordionTrigger className="text-lg">How does the free trial work?</AccordionTrigger>
+                    <AccordionTrigger className="text-lg">How does the it works work?</AccordionTrigger>
                     <AccordionContent className="flex flex-col gap-2">
                         <p>
                             Just <Link to="/" className="text-purple-500">sign up</Link>  here and you will get 500 visitors per day for the first 5 days on any of our plans, that's 2500 visitors for free!
@@ -48,7 +48,7 @@ export default function Faq() {
                             Cancel at any time during your trial and you will not be charged.
                         </p>
 
-                        <Link className="text-purple-500 flex gap-1" to="/"> <ExternalLink className="w-4" /> Sign up for a free trial</Link>
+                        <Link className="text-purple-500 flex gap-1" to="/"> <ExternalLink className="w-4" /> Start with your first campaign</Link>
                         <Link className="text-purple-500 flex gap-1" to="/"> <ExternalLink className="w-4" /> How to cancel a trial or subscription</Link>
                     </AccordionContent>
                 </AccordionItem>

@@ -53,7 +53,7 @@ export default function Process() {
                             <p >If the visitor matches your targeted demographics they are then instantly forwarded to your site directly. No click or advertisement required.</p>
                         </div>
                     </div>
-                    <Link to="/" className={cn(buttonVariants({ variant: "default", className: "w-full capitalize mt-8" }))}>Get 2500 Visitors on your free trial</Link>
+                    <Link to="/" className={cn(buttonVariants({ variant: "default", className: "w-full capitalize mt-8 text-lg" }))}>Start Now</Link>
 
                 </div>
             </div>

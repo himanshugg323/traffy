@@ -62,8 +62,8 @@ export default function Benifits() {
 
                 {/* DATA MAPPING HERE */}
                 <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 items-center">
-                    {BenefitsData.map((data => (
-                        <div style={{ borderRadius: "8px" }} className={borderAnimationWrapper}>
+                    {BenefitsData.map(((data, index) => (
+                        <div style={{ borderRadius: "8px" }} key={index} className={borderAnimationWrapper}>
                             <div className="flex flex-col-reverse sm:flex-row items-start gap-2 xl:gap-6 ">
                                 <div>
                                     <p className="font-semibold mb-1 text-lg capitalize">{data.title}</p>
