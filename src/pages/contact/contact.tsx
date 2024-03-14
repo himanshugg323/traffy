@@ -1,6 +1,6 @@
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
+// import { useForm } from 'react-hook-form';
+// import { zodResolver } from '@hookform/resolvers/zod';
+// import { z } from 'zod';
 import { FaFacebookSquare, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import Layout from "../tos/Layout";
 import { FaLocationDot, FaSquareXTwitter } from "react-icons/fa6";
@@ -10,35 +10,35 @@ import { Textarea } from "@/components/ui/textarea";
 import { useEffect, useState } from 'react';
 import { CheckCircleIcon } from 'lucide-react';
 
-const schema = z.object({
-    firstName: z.string().min(1, { message: 'First Name is required' }),
-    lastName: z.string().min(1, { message: 'Last Name is required' }),
-    email: z.string().email('Invalid email address').min(1, { message: 'Email is required' }),
-    phone: z.string().min(1, { message: 'Phone is required' }).min(10, 'Phone number must be at least 10 characters'),
-    message: z.string().min(1, { message: 'Message is required' }),
-});
+// const schema = z.object({
+//     firstName: z.string().min(1, { message: 'First Name is required' }),
+//     lastName: z.string().min(1, { message: 'Last Name is required' }),
+//     email: z.string().email('Invalid email address').min(1, { message: 'Email is required' }),
+//     phone: z.string().min(1, { message: 'Phone is required' }).min(10, 'Phone number must be at least 10 characters'),
+//     message: z.string().min(1, { message: 'Message is required' }),
+// });
 
-type FormData = z.infer<typeof schema>;
+// type FormData = z.infer<typeof schema>;
 
 export default function Contact() {
 
-    const [submitted, setSubmitted] = useState(false); // Added state for tracking submission
-    const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
-        resolver: zodResolver(schema),
-    });
+    const [submitted] = useState(false); // Added state for tracking submission
+    // const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
+    //     resolver: zodResolver(schema),
+    // });
 
 
-    const onSubmit = async (data: FormData) => {
-        console.log(data);
-        async () => {
-            await fetch("https://formsubmit.co/himanshuggg323@gmail.com", { method: "post" }).then((e) => {
-                if (e.status === 200) {
-                    reset();
-                    setSubmitted(true);
-                }
-            }).catch((e) => console.log("Error", e))
-        }
-    };
+    // const onSubmit = async (data: FormData) => {
+    //     console.log(data);
+    //     async () => {
+    //         await fetch("https://formsubmit.co/himanshuggg323@gmail.com", { method: "post" }).then((e) => {
+    //             if (e.status === 200) {
+    //                 reset();
+    //                 setSubmitted(true);
+    //             }
+    //         }).catch((e) => console.log("Error", e))
+    //     }
+    // };
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -62,25 +62,35 @@ export default function Contact() {
                     </div>
                     <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                         <div>
-                            <Input type="text" placeholder="First Name*" {...register('firstName')} />
-                            {errors.firstName && <span className="text-red-500">{errors.firstName.message}</span>}
+                            <Input required type="text" placeholder="First Name*"
+                            // {...register('firstName')}
+                            />
+                            {/* {errors.firstName && <span className="text-red-500">{errors.firstName.message}</span>} */}
                         </div>
                         <div>
-                            <Input type="text" placeholder="Last Name*" {...register('lastName')} />
-                            {errors.lastName && <span className="text-red-500">{errors.lastName.message}</span>}
+                            <Input required type="text" placeholder="Last Name*"
+                            //  {...register('lastName')} 
+                            />
+                            {/* {errors.lastName && <span className="text-red-500">{errors.lastName.message}</span>} */}
                         </div>
                         <div>
-                            <Input type="email" placeholder="Email*" {...register('email')} />
-                            {errors.email && <span className="text-red-500">{errors.email.message}</span>}
+                            <Input required type="email" placeholder="Email*"
+                            //  {...register('email')}
+                            />
+                            {/* {errors.email && <span className="text-red-500">{errors.email.message}</span>} */}
                         </div>
                         <div>
-                            <Input type="tel" placeholder="Phone*" {...register('phone')} />
-                            {errors.phone && <span className="text-red-500">{errors.phone.message}</span>}
+                            <Input required type="tel" placeholder="Phone*"
+                            // {...register('phone')} 
+                            />
+                            {/* {errors.phone && <span className="text-red-500">{errors.phone.message}</span>} */}
                         </div>
                     </div>
                     <div className="my-4">
-                        <Textarea placeholder="Message*" className="w-full h-32" {...register('message')}></Textarea>
-                        {errors.message && <span className="text-red-500">{errors.message.message}</span>}
+                        <Textarea placeholder="Message*" required className="w-full h-32"
+                        // {...register('message')}
+                        ></Textarea>
+                        {/* {errors.message && <span className="text-red-500">{errors.message.message}</span>} */}
                     </div>
                     <Button className="text-md">Send Message</Button>
                 </form>}

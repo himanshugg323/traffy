@@ -32,7 +32,7 @@ export default function CookiesPoliciy() {
 
                     <div className="mb-12" id="t0">
                         <p className="heading">Overview</p>
-                        <p className="desc">We use cookies to help improve your experience of https://www.simpletraffic.co. This cookie policy is part of Simple Traffic (Ascend Group)'s privacy policy, and covers the use of cookies between your device and our site. We also provide basic information on third-party services we may use, who may also use cookies as part of their service, though they are not covered by our policy.
+                        <p className="desc">We use cookies to help improve your experience of https://www.simpletraffic.co. This cookie policy is part of Traffy (Ascend Group)'s privacy policy, and covers the use of cookies between your device and our site. We also provide basic information on third-party services we may use, who may also use cookies as part of their service, though they are not covered by our policy.
                         </p>
                         <p className="desc">If you don’t wish to accept cookies from us, you should instruct your browser to refuse cookies from https://www.simpletraffic.co, with the understanding that we may be unable to provide you with some of your desired content and services.
                         </p>
@@ -93,7 +93,7 @@ export default function CookiesPoliciy() {
                     <div id="t3" className="mb-12">
                         <p className="heading">Third-party cookies on our site</p>
                         <p>
-                            We may employ third-party companies and individuals on our websites—for example, analytics providers and content partners. We grant these third parties access to selected information to perform specific tasks on our behalf. They may also set third-party cookies in order to deliver the services they are providing. Third-party cookies can be used to track you on other websites that use the same third-party service. As we have no control over third-party cookies, they are not covered by Simple Traffic (Ascend Group)'s cookie policy.
+                            We may employ third-party companies and individuals on our websites—for example, analytics providers and content partners. We grant these third parties access to selected information to perform specific tasks on our behalf. They may also set third-party cookies in order to deliver the services they are providing. Third-party cookies can be used to track you on other websites that use the same third-party service. As we have no control over third-party cookies, they are not covered by Traffy (Ascend Group)'s cookie policy.
 
                         </p>
                         <p className="text-gray-200 text-lg">

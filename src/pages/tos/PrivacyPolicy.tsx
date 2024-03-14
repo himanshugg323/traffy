@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
 
                     <div className="mb-12" id="t0">
                         <p className="heading">Overview</p>
-                        <p className="desc">Your privacy is important to us. It is Simple Traffic (Ascend Group)'s policy to respect your privacy regarding any information we may collect from you across our website, https://www.simpletraffic.co, and other sites we own and operate.</p>
+                        <p className="desc">Your privacy is important to us. It is Traffy (Ascend Group)'s policy to respect your privacy regarding any information we may collect from you across our website, https://www.simpletraffic.co, and other sites we own and operate.</p>
                     </div>
 
                     <div id="t1" className="mb-12">
