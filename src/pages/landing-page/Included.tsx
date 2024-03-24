@@ -27,7 +27,7 @@ const DataInclude = [
 
 export default function Included() {
     return (
-        <section className='px-4 py-12 max-w-6xl mx-auto'>
+        <section className='px-4 py-12 max-w-6xl mx-auto' id='industries'>
             <h3 className='text-2xl font-semibold sm:text-3xl mb-12 text-center'>What's <span className='text-purple-500'> Included</span> </h3>
 
             <div className='grid min-[800px]:grid-cols-2 gap-4 sm:gap-8'>
