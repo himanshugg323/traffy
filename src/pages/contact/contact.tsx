@@ -9,13 +9,11 @@ import { CheckCircleIcon, CheckCircle2 } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Link } from "react-router-dom";
 
-const formId = import.meta.env.VITE_FORM_ID
-
 export default function Contact() {
 
     const [submitted] = useState(false);
 
-    const [state, handleSubmit] = useForm(formId);
+    const [state, handleSubmit] = useForm("mbjnavkd");
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
