@@ -10,11 +10,11 @@ const TypingAimationText = ["Website", "Affiliate Link", "Blog"]
 
 export default function Hero() {
     return (
-        <section className="flex items-center bg-gradient-to-br  flex-col justify-center h-[calc(100vh)] max-h-[660px] sm:max-h-[770px] text-center">
+        <section className="flex items-center bg-gradient-to-br flex-col justify-center h-[calc(100vh)] max-h-[660px] sm:max-h-[770px] text-center">
 
-            <Link to="" className="border flex  gap-2 items-center max-w-max mx-auto p-1 rounded-full">
+            <Link to="" className="border border-gray-400 flex gap-2 items-center max-w-max mx-auto p-1 rounded-full">
                 <Button className="rounded-full" >New</Button>
-                <span className="text-sm font-medium text-gray-700 dark:hover:text-purple-500 dark:text-gray-300 flex ">
+                <span className="text-sm font-medium  hover:text-blue dark:hover:text-blue dark:text-gray-300 flex ">
                     Launch My First Campaign <span> <ChevronRight className="w-5 m-0 h-full" /> </span>
                 </span>
             </Link>

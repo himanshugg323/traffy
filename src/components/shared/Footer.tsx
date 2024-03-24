@@ -89,7 +89,7 @@ export default function Footer() {
 
                 </div>
                 <div className="flex items-center justify-between flex-wrap rounded-md bg-gray-100 px-2 sm:px-6 py-3 dark:bg-gray-900">
-                    <span className="text-gray-600 dark:text-gray-400">&copy; SimpleTraffic - 2021 Ascend Group </span>
+                    <span className="text-gray-600 dark:text-gray-400">&copy; Traffy - 2024 Traffy Group </span>
                     <Link to="#" className="text-sm pt-4 sm:pt-0 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500"> All rights reserved.</Link>
                 </div>
             </div >

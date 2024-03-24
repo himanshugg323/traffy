@@ -3,9 +3,9 @@ import Hero from "./Hero";
 import Benifits from "./Benifits";
 import Process from "./Process";
 import Included from "./Included";
+import Industries from "./Industries";
 import Faq from "./Faq";
 import Footer from "@/components/shared/Footer";
-import Pricing from "./Pricing";
 
 export default function LandingPage() {
     return (
@@ -15,7 +15,7 @@ export default function LandingPage() {
             <Benifits />
             <Process />
             <Included />
-            <Pricing />
+            <Industries />
             <Faq />
             <Footer />
         </>

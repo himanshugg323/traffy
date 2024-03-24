@@ -7,6 +7,13 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #ffffff;
+}
+
+.dark body {
+  background-color: #18181b;
+}
 
 @layer base {
   :root {
@@ -122,4 +129,12 @@ nav a {
 
 footer a:hover {
   @apply underline
+}
+
+.text-blue {
+  color: #1d6db7;
+}
+
+.bg-blue {
+  color: #1d6db7;
 }

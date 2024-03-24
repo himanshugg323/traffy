@@ -32,7 +32,7 @@ const Links = [
 export default function Navbar() {
     return (
         <header>
-            <nav className="fixed px-4 overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b  backdrop-blur">
+            <nav className="fixed px-4 overflow-hidden z-20 w-full  dark:bg-zinc-900 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b  backdrop-blur">
                 <div className="m-auto max-w-7xl 2xl:px-0">
                     <div className="flex flex-wrap items-center justify-between">
                         <div className="w-full items-center flex justify-between md:w-auto">
@@ -51,11 +51,11 @@ export default function Navbar() {
                                             return <li key={index}>
                                                 {link.path.includes("#") ?
                                                     <AnchorLink offset={100} href={link.path}
-                                                        className="block md:px-4 transition hover:text-primary-600 dark:hover:text-purple-500"
+                                                        className="block md:px-4 transition hover:text-primary-600 hover:text-purple-500"
                                                     >
                                                         {link.link}
                                                     </AnchorLink> :
-                                                    <Link to={link.path} className="block md:px-4 transition hover:text-primary-600 dark:hover:text-purple-500">
+                                                    <Link to={link.path} className="block md:px-4 transition hover:text-primary-600 hover:text-purple-500">
                                                         {link.link}
                                                     </Link>
                                                 }

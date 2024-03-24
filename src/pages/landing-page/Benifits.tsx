@@ -1,6 +1,6 @@
 // __________________|| STYLES START ||_______________
 
-const borderAnimationWrapper = "max-w-[460px] mx-auto p-4 bg-white relative border shadow-xl shadow-gray-950/5   dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]   [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:179] [--lightness:55%] dark:[--lightness:14%] [--opacity:1] [--radius:24] [--saturation:78%] dark:[--saturation:97%] [--speed:2]"
+const borderAnimationWrapper = "max-w-[460px] mx-auto p-4 bg-transparent relative border border-gray-400 shadow-xl shadow-gray-950/5   dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]   [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:179] [--lightness:55%] dark:[--lightness:14%] [--opacity:1] [--radius:24] [--saturation:78%] dark:[--saturation:97%] [--speed:2]"
 
 const borderAnimationParent = "glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]"
 
@@ -19,30 +19,21 @@ const BenefitsData = [
         description: "The traffic we deliver is 100% real and has the chance to convert into sales, leads and sign ups."
     },
     {
-        src: "/images/genrevenue.svg",
-        title: "Generate revenue",
-        description: "The traffic we deliver is 100% real and has the chance to convert into sales, leads and sign ups."
+        src: "/images/moreclicks.svg",
+        title: "Receive more clicks",
+        description: "The visitors you receive can navigate your website and click on your links, unlike bots or fake visitors."
     },
     {
-        src: "/images/genrevenue.svg",
-        title: "Generate revenue",
-        description: "The traffic we deliver is 100% real and has the chance to convert into sales, leads and sign ups."
+        src: "/images/search.svg",
+        title: "Improve search rankings",
+        description: "Improve your position on Google and other search engines by proving your website receives visitors."
     },
     {
-        src: "/images/genrevenue.svg",
-        title: "Generate revenue",
-        description: "The traffic we deliver is 100% real and has the chance to convert into sales, leads and sign ups."
+        src: "/images/boost.svg",
+        title: "Boost in analytics",
+        description: "Our traffic will be visible in your Google Analytics so you can measure your success."
     },
-    {
-        src: "/images/genrevenue.svg",
-        title: "Generate revenue",
-        description: "The traffic we deliver is 100% real and has the chance to convert into sales, leads and sign ups."
-    },
-    {
-        src: "/images/genrevenue.svg",
-        title: "Generate revenue",
-        description: "The traffic we deliver is 100% real and has the chance to convert into sales, leads and sign ups."
-    },
+
 ]
 
 
@@ -55,19 +46,19 @@ export default function Benifits() {
                 <p className="max-w-2xl mx-auto mt-1">Generate sales and increase engagement with high quality traffic that is demographically targeted.</p>
             </div>
 
-            <div className=" relative mt-8 sm:mt-12 max-w-7xl mb-12 mx-auto">
+            <div className=" relative mt-8 sm:mt-12 max-w-5xl mb-12 mx-auto">
                 {/* BACKGROUND STYLING */}
                 <div className="absolute inset-0 -top-8 left-1/2 -z-20 h-56 w-full -translate-x-1/2 dark:opacity-10 [background-image:linear-gradient(to_bottom,transparent_98%,theme(colors.gray.200/75%)_98%),linear-gradient(to_right,transparent_94%,_theme(colors.gray.200/75%)_94%)] [background-size:16px_35px] [mask:radial-gradient(black,transparent_95%)]"></div>
                 <div className="absolute top-12 inset-x-0 w-2/3 h-1/3 -z-[1] rounded-full bg-primary-300 dark:bg-white/10 mx-auto blur-3xl"></div>
 
                 {/* DATA MAPPING HERE */}
-                <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 items-center">
+                <div className="grid gap-6  sm:gap-8 sm:grid-cols-2 items-center">
                     {BenefitsData.map(((data, index) => (
                         <div style={{ borderRadius: "8px" }} key={index} className={borderAnimationWrapper}>
                             <div className="flex flex-col-reverse sm:flex-row items-start gap-2 xl:gap-6 ">
                                 <div>
                                     <p className="font-semibold mb-1 text-lg capitalize">{data.title}</p>
-                                    <p className="text-gray-300">{data.description}</p>
+                                    <p className="dark:text-gray-300 text-gray-500">{data.description}</p>
                                 </div>
                                 <img src={data.src} className="max-w-20 " />
                             </div>

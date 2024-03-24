@@ -10,9 +10,9 @@ import { Link } from "react-router-dom"
 
 export default function Faq() {
     return (
-        <section className="px-4 max-w-5xl mx-auto pb-12">
+        <section className="px-4 mt-12 max-w-5xl mx-auto pb-12">
             <div className="text-center">
-                <p className="text-2xl font-semibold sm:text-3xl mb-1">Frequently Asked Questions</p>
+                <p className="text-2xl font-semibold sm:text-3xl mb-1">Frequently Asked <span className="text-purple-600"> Questions</span></p>
                 <p >Let us answer any questions you have about our service</p>
             </div>
             <Accordion type="single" collapsible className=" mt-12 text-gray-300 max-w-2xl mx-auto">
