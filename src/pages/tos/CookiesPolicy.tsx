@@ -32,7 +32,7 @@ export default function CookiesPoliciy() {
 
                     <div className="mb-12" id="t0">
                         <p className="heading">Overview</p>
-                        <p className="desc">We use cookies to help improve your experience of https://www.simpletraffic.co. This cookie policy is part of Traffy (Ascend Group)'s privacy policy, and covers the use of cookies between your device and our site. We also provide basic information on third-party services we may use, who may also use cookies as part of their service, though they are not covered by our policy.
+                        <p className="desc">We use cookies to help improve your experience of www.traffy.co This cookie policy is part of Traffy (Ascend Group)'s privacy policy, and covers the use of cookies between your device and our site. We also provide basic information on third-party services we may use, who may also use cookies as part of their service, though they are not covered by our policy.
                         </p>
                         <p className="desc">If you don’t wish to accept cookies from us, you should instruct your browser to refuse cookies from https://www.simpletraffic.co, with the understanding that we may be unable to provide you with some of your desired content and services.
                         </p>
