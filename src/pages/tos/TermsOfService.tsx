@@ -34,7 +34,7 @@ export default function TermsOfService() {
 
                     <div id="terms" className="mb-12">
                         <p className="heading">1. Terms</p>
-                        <p className="desc">By accessing the website at https://www.simpletraffic.co, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
+                        <p className="desc">By accessing the website at https://www.traffy.co/, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
                     </div>
 
                     <div id="service-agreement" className="mb-12" >
